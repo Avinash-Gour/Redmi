@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+    padding: 20px 40px;
+    display: flex;
+    background-color: white;
+    box-shadow: -5px 13px 64px -24px rgba(0,0,0,0.75);
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+
+  nav span{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo{
+    height: 40px;
+    display: flex;
+  }
+  .primary-links{
+    width: 80%;
+    margin-left: 25px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+  }
+  .secondary-links{
+    width: 40%;
+    margin-left: 25px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+  }
+
+  #menu, #cart{
+    display: none;
+  }
+
+  .hero{
+    height: 90vh;
+    margin-top: 60px;
+  }
+
+  .redmi-power{
+    width: 100%;
+    height: 100%;
+    margin-top: 55px;
+    background-image: url(./images/41b65ef7877bcfd70a8fc223b92a50e7.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: 40%;
+   position: relative;
+   
+  }
+
+  .phone{
+    height: 700px;
+    width: 100;
+  }
+
+  .hero .redmi-text-section{
+    height: 55%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+  }
+
+  .redmi-text-section h1{
+    font-size: 55px;
+    font-weight: 400;
+  }
+
+  .redmi-text-section h2{
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .redmi-text-section h5{
+    font-weight: 300;
+  }
+
+  .redmi-text-section .redmi{
+    font-size: 50px;
+    font-weight: 700;
+    margin-right: 10px;
+  }
+
+  .grid-section{
+    height: 130vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
+  }
+
+  .container{
+    height: 80%;
+    width: 60%;
+    background-color: #f8f8f8;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+
+  .box-a{
+    background-color: red;
+    grid-column: 1 /3;
+    border-radius: 5px;
+    background-image: url(./images/81663483.webp);
+    background-size: cover;
+  }
+  .box-b{
+    background-color: orange;
+    grid-column: 3 /5;
+    border-radius: 5px;
+    background-image: url(./images/dbd49626046ead023d6613e906e11b8f.jpg);
+    background-size: cover;
+  }
+  .box-c{
+    background-color: purple;
+    grid-column: 5 / 8;
+    border-radius: 5px;
+    background-image: url(./images/note10promax-featured.webp);
+    background-size: cover;
+  }
+  .box-d{
+    background-color: green;
+    grid-column: 1 / 4;
+    border-radius: 5px;
+    background-image: url(./images/41b65ef7877bcfd70a8fc223b92a50e7.jpg);
+    background-size: cover;
+  }
+  .box-e{
+    background-color: lightslategrey;
+    grid-column: 4 / -1;
+    border-radius: 5px;
+    background-image: url(./images/P2fk47aXcxbY4dj6t58XCg.jpg);
+    background-size: cover;
+  }
+  .box-f{
+    background-color: turquoise;
+    grid-column: 1 / 4;
+    border-radius: 5px;
+    background-image: url(./images/note10promax-featured.webp);
+    background-size: cover;
+  }
+  .box-g{
+    background-color: pink;
+    grid-column: 4 / 6;
+    border-radius: 5px;
+    background-image: url(./images/img-5171_7ane.1248.webp);
+    background-size: cover;
+  }
+  .box-h{
+    background-color: black;
+    grid-column: 6 / 8;
+    border-radius: 5px;
+    background-image: url(./images/REdmi-10A.webp);
+    background-size: cover;
+  }
+
+
+  @media(max-width : 768px){
+
+    .primary-links , .secondary-links{
+        display: none;
+    }
+
+    #menu,#cart{
+        display: block;
+        font-size: 22px;
+    }
+
+    nav span{
+        display: flex;
+        justify-content: center;
+    }
+
+    .redmi-power{
+      display: block;
+      background-position: 30%;
+    }
+
+    .hero{
+      height: 50vh;
+    }
+
+    .hero .redmi-text-section{
+      display: none;
+    }
+
+    .grid-section{
+      height: 250vh;
+    }
+
+    .container{
+      height: 95%;
+      width: 80%;
+      background-color: #f8f8f8;
+      margin-top: 60px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(16, 1fr);
+      grid-gap: 10px;
+    }
+
+    .box-a{
+      grid-row: 1 / 3;
+      grid-column: 1;
+    }
+
+    .box-b{
+      grid-row: 3 / 5;
+      grid-column: 1;
+    }
+
+    .box-c{
+      grid-row: 5 / 7;
+      grid-column: 1;
+    }
+
+    .box-d{
+      grid-row: 7 / 9;
+      grid-column: 1;
+    }
+    .box-e{
+      grid-row: 9 / 11;
+      grid-column: 1;
+    }
+    .box-f{
+      grid-row: 11 / 13;
+      grid-column: 1;
+    }
+    .box-g{
+      grid-row: 13 / 15;
+      grid-column: 1;
+    }
+    .box-h{
+      grid-row: 15 / 17;
+      grid-column: 1;
+    }
+  }
+  
